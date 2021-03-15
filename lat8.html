@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <script language="JavaScript">
+        function test (){
+            //membuat textbox untuk menginput nilai val1
+            var val1=document.kirim.T1.value
+            if (val1%2==0)
+            document.kirim.T2.value="bilangan genap" //output berupa teks "bilangan genap"
+            else
+            document.kirim.T2.value="bilangan ganjil" //output berupa teks "bilangan ganjil"
+        }
+    </script>
+    <body>
+        <form method="POST" name="kirim">
+            <!-- membuat textbox hasil -->
+            <p>BIL <input type="text" name="T1" size="20"> Merupakan Bil <input type="text" name="T2" size="20"></p>
+            <!-- membuat button "TEBAK" yang memanggil function test -->
+            <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+        </form>
+    </body>
+</html>

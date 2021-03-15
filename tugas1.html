@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Konversi Nilai </title>
+    </head>
+    <script lang="Javascript">
+        //perintah menginput nilai 1-100
+        var nilai = prompt("Masukkan nilai anda (0-100) : ", 0);
+        var hasil = "";
+        if (nilai <= 40)
+        hasil = "E"; //output = E
+        else if (nilai > 40 && nilai <= 55)
+        hasil = "D"; //output = D
+        else if (nilai > 55 && nilai <= 60)
+        hasil = "C"; //output = C
+        else if (nilai > 60 && nilai <= 65)
+        hasil = "BC"; //output = BC
+        else if (nilai > 65 &&  nilai <= 70)
+        hasil = "B"; //output = B
+        else if (nilai > 70 &&  nilai <= 80)
+        hasil = "AB"; //output = AB
+        else 
+        hasil = "A"; //output = A
+        //menampilkan konversi nilai angka ke huruf
+        document.write("Nilai anda : "+ hasil) 
+    </script>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Kalkulator Sederhana</title>
+    </head>
+    <script language="JavaScript">
+    function hitung(pilihan)
+    {
+        var bil1=document.getElementById('angka1').value;
+        var bil2=document.getElementById('angka2').value;
+        bil1 = parseInt(bil1)
+        bil2 = parseInt(bil2)
+        //output hasil penjumlahan bil1 dan bil 2
+        if (pilihan=='+'){
+        document.getElementById('hasil').value = bil1 + bil2;
+        }
+        //output hasil pengurangan bil1 dan bil 2
+        else if(pilihan == '-'){
+        document.getElementById('hasil').value = bil1 - bil2;
+        }
+        //output hasil perkalian bil1 dan bil 2
+        else if(pilihan == 'x'){
+        document.getElementById('hasil').value = bil1 * bil2;
+        }
+        //output hasil pembagian bil1 dan bil 2
+        else {
+        document.getElementById('hasil').value = bil1 / bil2;
+        }
+    }
+    </script>
+    <body>
+        <!-- membuat textbox untuk menginput bil1 -->
+        Bil 1 <input name="bil1" type="text" value="" id="angka1" />
+        <br>
+        <br>
+        <!-- membuat textbox untuk menginput bil2 -->
+        Bil 2 <input name="bil2" type="text" value="" id="angka2" />
+        <br>
+        <br>
+        Operator :
+        <!-- membuat button untuk menjumlah -->
+        <input name="hitung" type="button" value="+" onclick="hitung(this.value)"/>
+        <!-- membuat button untuk mengurang -->
+        <input name="hitung" type="button" value="-" onclick="hitung(this.value)"/>
+        <!-- membuat button untuk mengali -->
+        <input name="hitung" type="button" value="x" onclick="hitung(this.value)"/>
+        <!-- membuat button untuk membagi -->
+        <input name="hitung" type="button" value="/" onclick="hitung(this.value)"/>
+        <br>
+        <br>
+        <!-- membuat textbox hasil -->
+        <input name="hasil" type="text" value="0" id="hasil" />
+    </body>
+</html>

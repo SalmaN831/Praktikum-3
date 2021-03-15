@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Writing into an HTML Element with JavaScript</title>
+    </head>
+    <body>
+        <p id="greet"></p>
+        <p id="result"></p>
+        <script>
+            //menulis teks dalam sebuah elemen
+            document.getElementById("greet").innerHTML = "Hello Gatot"; //output "Hello Gatot"
+            //mengisi nilai variabel x dan y dalam elemen
+            var x = 50;
+            var y = 30;
+            var sum = x + y;
+            document.getElementById("result").innerHTML = sum; //output = 80
+        </script>
+    </body>
+</html>

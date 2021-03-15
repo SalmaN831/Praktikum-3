@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> Contoh Program JavaScript </title>
+	</head>
+	<script language="JavaScript">
+	function test (val1,val2) {
+		//menampilkan hasil perkalian val1 dengan val2
+		document.write("<br>"+"Perkalian : val1*val2 "+"<br>")
+		document.write(val1*val2)
+		//menampilkan hasil pembagian val1 dengan val2
+		document.write("<br>"+"Pembagian : val1/val2 "+"<br>")
+		document.write(val1/val2)
+		//menampilkan hasil penjumlahan val1 dengan val2
+		document.write("<br>"+"Penjumlahan : val1+val2 "+"<br>")
+		document.write(val1+val2)
+		//menampilkan hasil pengurangan val dengan val2
+		document.write("<br>"+"Pengurangan : val1-val2 "+"<br>")
+		document.write(val1-val2)
+		//menampilkan hasil modulus val1 dengan val2
+		document.write("<br>"+"Modulus : val1%val2 "+"<br>")
+		document.write(val1%val2)
+	}
+	</script>
+	<body>
+		<!-- membuat button "arithmetic" yang memanggil function test dengan nilai val1 = 9 dan val2 = 4-->
+    	<input type="button" name="button1" value="arithmetic" onclick=test(9,4)>
+	</body>
+</html>

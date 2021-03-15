@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Contoh Program Javascript </title>
+    </head>
+    <script language="Javascript">
+    function test () {
+        //menginput val1
+        val1=window.prompt("Nilai I :")
+        //menginput val2
+        val2=window.prompt("Nilai II :")
+        //menampilkan hasil val1 == val2
+        document.write("<br>"+"val1==val2"+"<br>")
+        document.write(val1==val2)
+        //menampilkan hasil val1 != val2
+        document.write("<br>"+"val1!=val2"+"<br>")
+        document.write(val1!=val2)
+        //menampilkan hasil val1 > val2
+        document.write("<br>"+"val1&gtval2"+"<br>")
+        document.write(val1>val2)
+        //menampilkan hasil val1 < val2
+        document.write("<br>"+"val1&ltval2"+"<br>")
+        document.write(val1<val2)
+    }
+    </script>
+    <body>
+        <!-- membuat button "relational" yang memanggil function test -->
+        <input type="button" name="button1" value="relational" onclick=test()>
+    </body>
+</html>
